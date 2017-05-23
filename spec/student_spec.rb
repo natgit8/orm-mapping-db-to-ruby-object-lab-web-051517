@@ -138,9 +138,9 @@ describe Student do
         sam.name = "Sam"
         sam.grade = 10
         sam.save
-        jess.name = "Jess"
-        jess.grade = 10
-        jess.save
+        # jess.name = "Jess"
+        # jess.grade = 10
+        # jess.save
 
         first_x_students = Student.first_x_students_in_grade_10(2)
         expect(first_x_students.size).to eq(2)
@@ -159,10 +159,10 @@ describe Student do
         sam.id = 2
         sam.save
 
-        jess.name = "Jess"
-        jess.grade = 10
-        jess.id = 3
-        jess.save
+        # jess.name = "Jess"
+        # jess.grade = 10
+        # jess.id = 3
+        # jess.save
 
         first_student = Student.first_student_in_grade_10
         expect(first_student.id).to eq(2)
